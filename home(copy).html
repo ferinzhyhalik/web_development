@@ -59,7 +59,7 @@
                   <li><a href="blog.html" class="nav-link">EVENT</a></li>
                   <li><a href="contact.html" class="nav-link">CONTACT</a></li>
                   <li><a href="order/ordernow.html" class="nav-link">ORDER NOW</a></li>
-                  <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="loginModal">Log In</button>
+                  <button data-toggle="modal" data-target="#loginModal" type="button" class="btn btn-primary">Log In</button>
                   
                   <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="loginModal">Sign Up</button>
                   
@@ -71,6 +71,28 @@
         </div>
 
       </header>
+		  
+		  
+	  <div class="modal" id="loginModal" tabIndex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" align="center">
+		<div class="modal-dialog-centered" role="document" style="width: 50%">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title " id="exampleModalLabel">Modal title</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<form action="auth" method="post">Username</form>
+				<div class="form-group"></div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			  </div>
+			</div>
+		</div>
+	</div>
 
       <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-content-centered" role="document">
